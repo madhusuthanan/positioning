@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/positioning2.css">
+</head>
+<body>
+<div class="p1"><p>WITH RELATIVE POSITIONING</p></div>
+<p>
+If you specify position:relative, then you can use top or bottom, and left or right to move the element relative to where it would normally occur in the document.
+
+Let's move div-1 down 20 pixels, and to the left 40 pixels:
+</p>
+<p>
+Notice the space where div-1 normally would have been if we had not moved it: now it is an empty space. The next element (div-after) did not move when we moved div-1. That's because div-1 still occupies that original space in the document, even though we have moved it.
+
+It appears that position:relative is not very useful, but it will perform an important task later
+</p>
+<div class="overall_container">
+	<div id="div-before">
+		<p>id = div-before</p>
+	</div>
+	<div id="container1">
+		<div class="container1-1">
+			<div id="div-1">
+				<p>id = div-1</p>
+			</div>
+			<div id="div-1a">
+				<p>id = div-1a</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit.</p>
+			</div>
+			<div id="div-1b">
+				<p>id = div-1b</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit. Nam mattis, arcu ut bibendum commodo, magna nisi tincidunt tortor, quis accumsan augue ipsum id lorem.</p>
+			</div>
+			<div id="div-1c">
+				<p>id = div-1c</p>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="div-after">
+		<p>id = div-after</p>
+	</div>
+
+</div>
+</body>
+</html>

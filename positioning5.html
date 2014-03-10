@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/positioning5.css">
+</head>
+<body>
+<div class="p1"><p>  two column absolute</p></div>
+<p>
+Now we can make a two-column layout using relative and absolute positioning!
+</p>
+<p>
+One advantage to using absolute positioning is that we can position the elements in any order on the page, regardless of the order they appear in the HTML. So I put div-1b before div-1a.
+
+But wait - what happened to the other elements? They are being obscured by the absolutely positioned elements. What can we do about that?
+</p>
+<div class="overall_container">
+	<div id="div-before">
+		<p>id = div-before</p>
+	</div>
+	<div id="container1">
+		<div class="container1-1">
+			<div id="div-1">
+				<p>id = div-1</p>
+			</div>
+			<div id="div-1a">
+				<p>id = div-1a</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit.</p>
+			</div>
+			<div id="div-1b">
+				<p>id = div-1b</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit. Nam mattis, arcu ut bibendum commodo, magna nisi tincidunt tortor, quis accumsan augue ipsum id lorem.</p>
+			</div>
+			<div id="div-1c">
+				<p>id = div-1c</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="div-after">
+		<p>id = div-after</p>
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/positioning6.css">
+</head>
+<body>
+<div class="p1"><p> float columns</p></div>
+<p>
+For variable height columns, absolute positioning does not work, so let's come up with another solution.
+
+We can "float" an element to push it as far as possible to the right or to the left, and allow text to wrap around it. This is typically used for images, but we will use it for more complex layout tasks (because it's the only tool we have).
+</p>
+<p>
+If we float one column to the left, then also float the second column to the left, they will push up against each other.
+</p>
+<div class="overall_container">
+	<div id="div-before">
+		<p>id = div-before</p>
+	</div>
+	<div id="container1">
+		<div class="container1-1">
+			<div id="div-1">
+				<p>id = div-1</p>
+			</div>
+			<div id="div-1a">
+				<p>id = div-1a</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit.</p>
+			</div>
+			<div id="div-1b">
+				<p>id = div-1b</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit. Nam mattis, arcu ut bibendum commodo, magna nisi tincidunt tortor, quis accumsan augue ipsum id lorem.</p>
+			</div>
+			<div id="div-1c">
+				<p>id = div-1c</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="div-after">
+		<p>id = div-after</p>
+	</div>
+
+</div>
+</body>
+</html>

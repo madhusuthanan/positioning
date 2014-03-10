@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/positioning3.css">
+</head>
+<body>
+<div class="p1"><p>position:absolute</p></div>
+<p>
+When you specify position:absolute, the element is removed from the document and placed exactly where you tell it to go.
+
+Let's move div-1a to the top right of the page:
+</p>
+Notice that this time, since div-1a was removed from the document, the other elements on the page were positioned differently: div-1b, div-1c, and div-after moved up since div-1a was no longer there.
+<p>
+
+</p>
+<div class="overall_container">
+	<div id="div-before">
+		<p>id = div-before</p>
+	</div>
+	<div id="container1">
+		<div class="container1-1">
+			<div id="div-1">
+				<p>id = div-1</p>
+			</div>
+			<div id="div-1a">
+				<p>id = div-1a</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit.</p>
+			</div>
+			<div id="div-1b">
+				<p>id = div-1b</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit. Nam mattis, arcu ut bibendum commodo, magna nisi tincidunt tortor, quis accumsan augue ipsum id lorem.</p>
+			</div>
+			<div id="div-1c">
+				<p>id = div-1c</p>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="div-after">
+		<p>id = div-after</p>
+	</div>
+
+</div>
+</body>
+</html>
